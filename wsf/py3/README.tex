@@ -1,0 +1,303 @@
+%%% -*- Mode: LaTeX; -*-
+%       RCS: $Id: README.tex,v 1.2 2017-12-26 16:35:03 lsipusr Exp $
+
+%%%#+BEGIN: bx:dblock:lcnt:warning-intro :class "memo" :langs "en+fa"
+
+%%%#+END:
+
+%%%#+BEGINNOT: bx:dblock:lcnt:header-begin :class "memo" :langs "en+fa"
+%{{{ DBLOCK-header-begin
+
+\documentclass{article}
+
+\usepackage{hevea} 
+%HEVEA\usepackage[utf8]{inputenc}
+
+\htmlhead{
+\vspace{0.4in}
+}
+
+\htmlfoot{
+\bigskip
+}
+
+
+\usepackage{fontspec}
+\setmainfont[Mapping=tex-text]{Linux Libertine O}
+
+\usepackage{morefloats}
+
+\usepackage{rcs}
+\usepackage{makeidx}
+\usepackage{supertabular}
+\usepackage{lscape}
+\usepackage{array} 
+\usepackage{framed}
+\usepackage{listings}
+
+\usepackage{color}
+
+\usepackage{hyperref}
+\usepackage{url}
+
+\usepackage{fancyhdr}
+
+\usepackage{caption}
+
+\usepackage{fontspec}
+\usepackage{xltxtra}
+\usepackage{xunicode}
+
+%}}} DBLOCK-header-begin
+%%%#+END:
+
+%%%#+BEGIN: bx:dblock:lcnt:style-params :class "memo" :langs "en+fa"
+\begin{comment}
+*  [[elisp:(org-cycle)][| ]]  *DBLK: style-params*                                       :: [[elisp:(beginning-of-buffer)][Top]] [[elisp:(delete-other-windows)][(1)]]  [[elisp:(org-cycle)][| ]]
+\end{comment}
+% ===== STYLE PARAMETERS =====
+
+\definecolor{darkred}{rgb}{0.5,0,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{darkblue}{rgb}{0,0,0.5}
+
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={keyword1} {key2} {key3}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=true ,       % false: boxed links; true: colored links
+    linkcolor=darkblue,     % color of internal links
+    citecolor=red,          % color of links to bibliography
+    filecolor=darkgreen,    % color of file links
+    urlcolor=darkred        % color of external links
+}
+
+
+\setlength{\textwidth}{6.0in}
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+
+\topmargin      0.00 in
+\textheight     8.50 in
+
+\setlength{\textwidth}{16.5cm}
+\setlength{\topmargin}{-0.3in}
+\setlength{\textheight}{8.5in}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+
+
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields  
+%% \fancyhead[C]{{\small  {\tt Work In Progress}}}
+\renewcommand{\headrulewidth}{0pt} % no line in header area
+\fancyfoot{} % clear all footer fields
+%%\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+%% \fancyfoot[RE,LO]{{\tt --EARLY DRAFT DOCUMENT--\hspace{20 mm} --Reflects Work In Progress-- }}
+\fancyfoot[RE,LO]{}
+
+
+\parindent 0 true pc
+
+\addtolength{\parskip}{5pt}
+
+
+%%%#+END:
+
+%%%#+BEGIN: bx:dblock:lcnt:header-end :class "memo" :langs "en+fa"
+%{{{ DBLOCK-header-end
+
+\begin{document}
+%}}} DBLOCK-header-end
+%%%#+END:
+
+%%%#+BEGIN: bx:dblock:lcnt:front-begin :class "memo" :langs "en+fa"
+\begin{comment}
+*  [[elisp:(org-cycle)][| ]]  *DBLK: front-begin*                                       :: [[elisp:(beginning-of-buffer)][Top]] [[elisp:(delete-other-windows)][(1)]]  [[elisp:(org-cycle)][| ]]
+\end{comment}
+
+%%%#+END:
+
+%%%#+BEGIN: bx:dblock:lcnt:copyright :class "memo" :langs "en+fa"
+\begin{comment}
+*  [[elisp:(org-cycle)][| ]]  *DBLK: copyright*                                       :: [[elisp:(beginning-of-buffer)][Top]] [[elisp:(delete-other-windows)][(1)]]  [[elisp:(org-cycle)][| ]]
+\end{comment}
+
+%%%#+END:
+
+%%%#+BEGIN: bx:dblock:lcnt:front-end :class "memo" :langs "en+fa"
+\begin{comment}
+*  [[elisp:(org-cycle)][| ]]  *DBLK: front-end*                                       :: [[elisp:(beginning-of-buffer)][Top]] [[elisp:(delete-other-windows)][(1)]]  [[elisp:(org-cycle)][| ]]
+\end{comment}
+
+%%%#+END:
+
+%%%#+BEGINNOT: bx:dblock:lcnt:main-begin :class "memo" :langs "en+fa"
+\begin{comment}
+*  [[elisp:(org-cycle)][| ]]  *DBLK: main-begin*                                       :: [[elisp:(beginning-of-buffer)][Top]] [[elisp:(delete-other-windows)][(1)]]  [[elisp:(org-cycle)][| ]]
+\end{comment}
+
+\title{unisos.wsf}
+
+%%%#+END:
+
+\thispagestyle{empty}
+
+
+\bigskip
+
+\section{Overview}
+
+unisos.wsf: Somewhat General purpose Web Scraping Framework (WSF)
+
+
+\section{Support}
+
+For support, criticism, comments and questions; please contact the 
+author/maintainer \\
+\href{http://mohsen.1.banan.byname.net}{Mohsen Banan} at: \url{http://mohsen.1.banan.byname.net/contact}
+
+
+\section{Documentation}
+
+The is no silver bullet for universally providing web scraping capabilities.
+
+Each web site is different and various technologies, encodings and paradigms are used.
+
+What can be done is to create a framework that addresses some of the common aspects of this problem domain.
+
+This is what Web Scraping Framework (WSF) tries to do.
+
+Common aspects of Web scraping include:
+
+\begin{description}
+  \item[Configuration:]
+        WSF uses python function invocation as the configuration syntax.
+\begin{verbatim}
+        See ./unisos/wsf/wsf_config.py for details.
+\end{verbatim}
+
+  \item[Simultaneous Parallel Dispatch Of Multiple Urls:]
+        WSF provides a rudimentary mechanism for parallel dispatch.
+\begin{verbatim}
+        See ./unisos/wsf/wsf_parallelProc.py for details.
+\end{verbatim}
+        Use of external systems such as celery for workers dispatch is a better solution for
+        larger systems.
+
+  \item[Retrieving Web Content As html:]
+        WSF uses requests to obtain html.
+\begin{verbatim}
+        See ./unisos/wsf/wsf_inputs.py for details.
+\end{verbatim}
+
+  \item[Digesting html:]
+        WSF uses Beautiful Soup 4 to digest html.
+\begin{verbatim}
+        See ./unisos/wsf/wsf_digestHtml.py for details.
+\end{verbatim}
+
+  \item[Basic Scraping Facilities:]
+        WSF provides some generic facilities for basic scripting as an abstract class.
+\begin{verbatim}
+        See ./unisos/wsf/wsf_scraperBasic.py for details.
+\end{verbatim}
+
+        The ScraperBasic is an abstract and incomplete class which must be subclassed
+        to become concrete.
+
+        Features provided by this principal class are:
+        \begin{itemize}
+          \item Capturing of Config parameters.
+          \item Facilities for simple state transition.
+          \item Facilities for maintaining results.
+
+        \end{itemize}
+
+  \item[Multipage Scraping Facilities:]
+        WSF provides some facilities for web information that has been paginated.
+\begin{verbatim}
+        See ./unisos/wsf/wsf_scraperMultipage.py for details.
+\end{verbatim}
+
+        The ScraperMultipage(wsf\_scraperBasic.ScraperBasic) is an abstract and incomplete class which must be subclassed
+        to become concrete.
+
+        ScraperMultipage itself is a subclass of wsf\_scraperBasic.ScraperBasic.
+
+
+  \item[Capturing Results And Writing Results:]
+        WSF provides a rudimentary mechanism for capturing intermediate results and their output.
+\begin{verbatim}
+        See ./unisos/wsf/wsf_results.py for details.
+\end{verbatim}
+
+  \item[Command Line Mapping:]
+        WSF can be used in combination with unisos.icm (Interactive Command Modules)
+
+        ICM can be thought of as a supper set of click which supports plugins as
+        ``load'' parameters.
+
+        Both config files and concrete scraper classes can be passed to ICMs as ``load''
+        parameters.
+
+\end{description}
+
+\section{Installation}
+
+\subsection{From PyPi}
+
+\begin{verbatim}
+pip install unisos.wsf
+\end{verbatim}
+
+\subsection{From File System}
+
+Go to the wsf/py3 directory.
+
+\begin{verbatim}
+Run: ./setup.py sdist
+\end{verbatim}
+
+\begin{verbatim}
+Run: pip install --no-cache-dir ./dist/unisos.wsf-0.1.tar.gz
+\end{verbatim}
+
+
+\section{Usage}
+
+\begin{verbatim}
+import unisos.wsf
+\end{verbatim}
+
+Use of unisos.wsf involves creating concrete subclasses of the
+set of abstract classes that wsf provides.
+
+
+%%%#+BEGIN: bx:dblock:lcnt:main-end :class "memo" :langs "en+fa"
+\begin{comment}
+*  [[elisp:(org-cycle)][| ]]  *DBLK: main-end*                                       :: [[elisp:(beginning-of-buffer)][Top]] [[elisp:(delete-other-windows)][(1)]]  [[elisp:(org-cycle)][| ]]
+\end{comment}
+
+\end{document}
+
+%%%#+END:
+
+%%%#+BEGIN: bx:dblock:lcnt:latex:end-of-file :class "memo" :langs "en+fa"
+%local variables:
+%major-mode: latex-mode
+%folded-file: nil
+%fill-column: 65
+%TeX-master: ""
+%End:
+%%%#+END:
