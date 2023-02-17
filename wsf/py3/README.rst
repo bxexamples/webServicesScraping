@@ -22,7 +22,7 @@ Support
 Documentation
 =============
 
-The is no silver bullet for universally providing web scraping
+Theree is no silver bullet for universally providing web scraping
 capabilities.
 
 Each web site is different and various technologies, encodings and
