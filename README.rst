@@ -1,1 +1,0 @@
-wsfClassicCars/py3/README.rst

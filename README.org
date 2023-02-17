@@ -1,0 +1,5 @@
+* Examples Of Usage Of Web Scraping Framework
+
+* ./wsf:  Is the Web Scraping Development Framework
+
+* ./wsfClassicCars : is an example use of unisos.wsf for scraping a classic cars listing website.
